@@ -1,0 +1,25 @@
+.headerWrapper {
+    box-shadow:  0px 0px 2px #00000029, 0px 4px 8px #00000014;
+}
+
+.topBar {
+    height: 10px;
+    background: linear-gradient( 90deg,var(--1e6r72l) calc(1 / 6 * 100%),var(--1sp3n6) calc(1 / 6 * 100%) calc(2 / 6 * 100%),var(--1by9nqj) calc(2 / 6 * 100%) calc(3 / 6 * 100%),var(--14ulwcx) calc(3 / 6 * 100%) calc(4 / 6 * 100%),var(--szikpp) calc(4 / 6 * 100%) calc(5 / 6 * 100%),var(--ff3zad) calc(5 / 6 * 100%) )
+}
+
+.logoWrapper {
+    padding: 28px 0 28px 50px;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+@media (max-width: 720px) {
+    .logoWrapper {
+        padding: 20px 0 20px 20px;
+    }
+    .logo {
+        max-width: 100px;
+    }
+}
