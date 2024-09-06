@@ -10,7 +10,7 @@ module.exports = {
             description: "The latest Apple iPhone with A16 Bionic chip.",
             category: "Smartphones",
             brand_id: 1,
-            imageUrl: "https://example.com/images/iphone15.jpg",
+            imageUrl: "/images/ip15.png",
         },
         {
             id: 2,
@@ -20,7 +20,7 @@ module.exports = {
             description: "Powerful Samsung flagship with an impressive camera.",
             category: "Smartphones",
             brand_id: 2,
-            imageUrl: "https://example.com/images/galaxys23.jpg",
+            imageUrl: "/images/s23.png",
         },
         {
             id: 3,
@@ -30,7 +30,7 @@ module.exports = {
             description: "Light and powerful MacBook with M2 chip.",
             category: "Laptops",
             brand_id: 1,
-            imageUrl: "https://example.com/images/macbookair.jpg",
+            imageUrl: "/images/mba.png",
         },
         {
             id: 4,
@@ -40,7 +40,7 @@ module.exports = {
             description: "Noise-cancelling headphones with superior sound.",
             category: "Headphones",
             brand_id: 4,
-            imageUrl: "https://example.com/images/wh1000xm5.jpg",
+            imageUrl: "/images/wh1000xm5.png",
         },
 
         // Clothing
@@ -52,7 +52,7 @@ module.exports = {
             description: "Stylish and comfortable sneakers for everyday wear.",
             category: "Shoes",
             brand_id: 7,
-            imageUrl: "https://example.com/images/nikeairmax.jpg",
+            imageUrl: "/images/am90.png",
         },
         {
             id: 6,
@@ -63,7 +63,7 @@ module.exports = {
             description: "Running shoes with excellent cushioning and comfort.",
             category: "Shoes",
             brand_id: 8,
-            imageUrl: "https://example.com/images/adidasultraboost.jpg",
+            imageUrl: "/images/ub.png",
         },
         {
             id: 7,
@@ -73,7 +73,7 @@ module.exports = {
             description: "Classic jeans with timeless design and perfect fit.",
             category: "Pants",
             brand_id: 9,
-            imageUrl: "https://example.com/images/levi501.jpg",
+            imageUrl: "/images/jeans.png",
         },
         {
             id: 8,
@@ -83,7 +83,7 @@ module.exports = {
             description: "Comfortable and sporty hoodie for casual wear.",
             category: "Tops",
             brand_id: 10,
-            imageUrl: "https://example.com/images/pumahoody.jpg",
+            imageUrl: "/images/puma.png",
         },
 
         // Food & Drinks
@@ -95,7 +95,7 @@ module.exports = {
             description: "Refreshing drink with a classic taste.",
             category: "Drinks",
             brand_id: 16,
-            imageUrl: "https://example.com/images/cocacola.jpg",
+            imageUrl: "/images/coke.png",
         },
         {
             id: 10,
@@ -105,7 +105,7 @@ module.exports = {
             description: "Delicious hazelnut spread loved by everyone.",
             category: "Food",
             brand_id: 18,
-            imageUrl: "https://example.com/images/nutella.jpg",
+            imageUrl: "/images/nutella.png",
         },
         {
             id: 11,
@@ -115,7 +115,7 @@ module.exports = {
             description: "Crispy chips with the original flavor.",
             category: "Snacks",
             brand_id: 19,
-            imageUrl: "https://example.com/images/pringles.jpg",
+            imageUrl: "/images/pringles.png",
         },
         {
             id: 12,
@@ -125,7 +125,7 @@ module.exports = {
             description: "Classic chocolate cookies with a creamy filling.",
             category: "Snacks",
             brand_id: 21,
-            imageUrl: "https://example.com/images/oreo.jpg",
+            imageUrl: "/images/oreos.png",
         },
 
         // Gaming
@@ -137,7 +137,7 @@ module.exports = {
             description: "Next-gen gaming console with stunning performance.",
             category: "Consoles",
             brand_id: 4,
-            imageUrl: "https://example.com/images/ps5.jpg",
+            imageUrl: "/images/ps5.png",
         },
         {
             id: 14,
@@ -147,7 +147,7 @@ module.exports = {
             description: "Powerful gaming console with 4K gaming capabilities.",
             category: "Consoles",
             brand_id: 26,
-            imageUrl: "https://example.com/images/xboxseriesx.jpg",
+            imageUrl: "/images/xbox.png",
         },
         {
             id: 15,
@@ -157,7 +157,7 @@ module.exports = {
             description: "Portable and versatile gaming console by Nintendo.",
             category: "Consoles",
             brand_id: 27,
-            imageUrl: "https://example.com/images/switch.jpg",
+            imageUrl: "/images/switch.png",
         },
         {
             id: 16,
@@ -167,7 +167,7 @@ module.exports = {
             description: "Mechanical gaming keyboard with RGB lighting.",
             category: "Peripherals",
             brand_id: 28,
-            imageUrl: "https://example.com/images/razerkeyboard.jpg",
+            imageUrl: "/images/keyboard.png",
         },
 
         // Miscellaneous
@@ -179,7 +179,7 @@ module.exports = {
             description: "Precise and customizable gaming mouse.",
             category: "Peripherals",
             brand_id: 29,
-            imageUrl: "https://example.com/images/logitechmouse.jpg",
+            imageUrl: "/images/mouse.png",
         },
         {
             id: 18,
@@ -189,17 +189,17 @@ module.exports = {
             description: "Wireless gaming headset with immersive sound.",
             category: "Headsets",
             brand_id: 30,
-            imageUrl: "https://example.com/images/arctis7.jpg",
+            imageUrl: "/images/headset1.png",
         },
         {
             id: 19,
-            name: "Haribo Goldbears",
+            name: "Goldbears",
             price: 1.8,
             rating: 4.3,
             description: "Delicious gummy bears with fruity flavors.",
             category: "Snacks",
             brand_id: 24,
-            imageUrl: "https://example.com/images/haribo.jpg",
+            imageUrl: "/images/goldbaeren.png",
         },
         {
             id: 20,
@@ -209,7 +209,7 @@ module.exports = {
             description: "Comfortable headset with surround sound.",
             category: "Headsets",
             brand_id: 34,
-            imageUrl: "https://example.com/images/hyperxcloud.jpg",
+            imageUrl: "/images/headset2.png",
         },
     ],
     brands: [
@@ -229,6 +229,7 @@ module.exports = {
         { id: 18, name: "Ferrero" },
         { id: 19, name: "Pringles" },
         { id: 21, name: "Oreo" },
+        { id: 24, name: "Haribo" },
 
         // Gaming-Marken
         { id: 26, name: "Microsoft" },

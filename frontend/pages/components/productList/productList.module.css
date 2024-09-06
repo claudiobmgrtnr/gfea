@@ -1,0 +1,31 @@
+.productList .listWrapper {
+  display: grid;
+  gap: 8px 1px;
+  grid-template-columns: 1fr;
+}
+
+.productList .topBar {
+  height: 130px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 40px;
+}
+
+.productList .title {
+  font-size: 28px;
+}
+
+@media (min-width: 700px) {
+  .productList .listWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .productList .listWrapper {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+
+  .productList .title {
+    font-size: 32px;
+  }
+}
