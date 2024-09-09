@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./productTile.module.css";
+import Rating from "../rating/Rating";
 
 interface ProductTileProps {
     id: number;
@@ -58,6 +59,7 @@ const ProductTile: React.FC<ProductTileProps> = ({
                 <p className={styles.description}>{description}</p>
 
                 {rating}
+                <Rating rating={rating} />
             </article>
         </div>
     );

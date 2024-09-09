@@ -2,7 +2,9 @@ import localFont from "next/font/local";
 import React, { ReactNode } from "react";
 import styles from "./layout.module.css";
 
-const galactica = localFont({ src: "../../fonts/galactica-2024-07-26.woff2" });
+const galactica = localFont({
+    src: "../../public/fonts/galactica-2024-07-26.woff2",
+});
 
 type LayoutProps = {
     children: ReactNode;

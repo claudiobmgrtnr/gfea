@@ -1,9 +1,9 @@
 import Head from "next/head";
 import localFont from "next/font/local";
-import ProductList from "./components/productList/ProductList";
-import Header from "./components/header/header";
-import { Main } from "./components/main/Main";
-import { Layout } from "./components/layout/Layout";
+import ProductList from "../components/productList/ProductList";
+import Header from "../components/header/header";
+import { Main } from "../components/main/Main";
+import { Layout } from "../components/layout/Layout";
 
 export default function Home() {
     return (
