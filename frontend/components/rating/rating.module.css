@@ -4,25 +4,39 @@
     format("woff2");
 }
 
+.rating {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  min-height: 16px;
+  font-size: 13px;
+}
 
 .full::before {
-  font-family: "ratingStar";
   content: "\e800"
 }
 
 .half::before {
-  font-family: "ratingStar";
   content: "\e801"
 }
 
 .half::after {
-  font-family: "ratingStar";
   content: "\e802";
-  color: #e0e0e0;
+  color: #bdbdbd
 }
 
 .empty::before {
-  font-family: "ratingStar";
   content: "\e800";
-  color: #e0e0e0;
+  color: #bdbdbd;
+}
+
+.star {
+  font-family: "ratingStar";
+  color: #000;
+}
+
+.ratingCount {
+  display: inline-block;
+  margin-left: 5px;
+  color: rgba(0, 0, 0, 0.6);
 }

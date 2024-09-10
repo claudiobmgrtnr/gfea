@@ -24,6 +24,7 @@ export default function ProductList() {
                             price={product.price}
                             insteadOfPrice={product.insteadOfPrice}
                             rating={product.rating}
+                            ratingCount={product.ratingCount}
                             description={product.description}
                             category={product.category}
                             brandName={product.Brand.name}

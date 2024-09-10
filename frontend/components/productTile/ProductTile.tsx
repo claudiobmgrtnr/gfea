@@ -9,6 +9,7 @@ interface ProductTileProps {
     price: number;
     insteadOfPrice?: number;
     rating: number;
+    ratingCount: number;
     description: string;
     category: string;
     brandName: string;
@@ -21,6 +22,7 @@ const ProductTile: React.FC<ProductTileProps> = ({
     price,
     insteadOfPrice,
     rating,
+    ratingCount,
     description,
     category,
     brandName,
@@ -58,8 +60,7 @@ const ProductTile: React.FC<ProductTileProps> = ({
                 </p>
                 <p className={styles.description}>{description}</p>
 
-                {rating}
-                <Rating rating={rating} />
+                <Rating rating={rating} ratingCount={ratingCount} />
             </article>
         </div>
     );

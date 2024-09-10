@@ -3,9 +3,10 @@ import styles from "./rating.module.css";
 
 export interface ratingProps {
     rating: number;
+    ratingCount: number;
 }
 
-const Rating: FC<ratingProps> = ({ rating }) => {
+const Rating: FC<ratingProps> = ({ rating, ratingCount }) => {
     const calcStars = (rating: number) => {
         let roundedRating = Math.round(rating * 2) / 2;
         const ratingStars = [];
@@ -28,10 +29,13 @@ const Rating: FC<ratingProps> = ({ rating }) => {
     };
 
     return (
-        <div>
+        <div className={styles.rating}>
             {calcStars(rating).map((star, index) => (
-                <div key={index} className={styles[star]}></div>
+                <div
+                    key={index}
+                    className={`${styles[star]} ${styles.star}`}></div>
             ))}
+            <span className={styles.ratingCount}>{ratingCount}</span>
         </div>
     );
 };

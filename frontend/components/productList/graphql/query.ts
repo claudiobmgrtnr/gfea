@@ -9,6 +9,7 @@ export const GET_PRODUCTS = gql`
     price
     insteadOfPrice
     rating
+    ratingCount
     description
     category
     brand_id
