@@ -1,8 +1,9 @@
 {
     "scripts": {
-        "start": "concurrently \"cd backend && yarn start\" \"cd frontend && yarn dev\""
+        "start": "concurrently \"cd backend && yarn && yarn start\" \"cd frontend && yarn && yarn dev\""
     },
     "dependencies": {
         "concurrently": "^8.2.2"
-    }
+    },
+    "license": "UNLICENSED"
 }
