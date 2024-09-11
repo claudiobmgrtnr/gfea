@@ -1,5 +1,4 @@
 import Head from "next/head";
-import localFont from "next/font/local";
 import ProductList from "../components/productList/ProductList";
 import Header from "../components/header/header";
 import { Main } from "../components/main/Main";

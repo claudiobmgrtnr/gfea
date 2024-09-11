@@ -1,22 +1,10 @@
 import React from "react";
 import styles from "./productTile.module.css";
 import Rating from "../rating/Rating";
+import { product } from "../productList/ProductList";
 
-interface ProductTileProps {
-    id: number;
-    name: string;
-    imageUrl: string;
-    price: number;
-    insteadOfPrice?: number;
-    rating: number;
-    ratingCount: number;
-    description: string;
-    category: string;
-    brandName: string;
-}
-
-const ProductTile: React.FC<ProductTileProps> = ({
-    id,
+// possible challenge: explain Omit
+const ProductTile: React.FC<Omit<product, "id" | "Brand">> = ({
     name,
     imageUrl,
     price,
@@ -27,7 +15,7 @@ const ProductTile: React.FC<ProductTileProps> = ({
     category,
     brandName,
 }) => {
-    // possible challenge
+    // possible challenge: Write a function that normalizes the price
     const normalizePrice = (price: number) => {
         if (price % 1 === 0) {
             return `${price}.–`;

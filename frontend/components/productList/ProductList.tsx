@@ -4,6 +4,20 @@ import { useQuery } from "@apollo/client";
 import styles from "./productList.module.css";
 import ProductTile from "../productTile/ProductTile";
 
+export type product = {
+    id: number;
+    name: string;
+    imageUrl: string;
+    price: number;
+    insteadOfPrice?: number;
+    rating: number;
+    ratingCount: number;
+    description: string;
+    Brand: { name: string };
+    category: string;
+    brandName: string;
+};
+
 export default function ProductList() {
     const { loading, error, data } = useQuery(GET_PRODUCTS);
     return (
@@ -15,10 +29,9 @@ export default function ProductList() {
                 {loading && <p>Loading...</p>}
                 {error && <p>Error :(</p>}
                 {data &&
-                    data.allProducts.map((product: any) => (
+                    data.allProducts.map((product: product) => (
                         <ProductTile
                             key={product.id}
-                            id={product.id}
                             name={product.name}
                             imageUrl={product.imageUrl}
                             price={product.price}
