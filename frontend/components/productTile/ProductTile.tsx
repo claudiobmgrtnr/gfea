@@ -15,6 +15,7 @@ const ProductTile: React.FC<Omit<product, "id" | "Brand">> = ({
     category,
     brandName,
 }) => {
+    // Refactor (whole file)
     // possible challenge: Write a function that normalizes the price
     const normalizePrice = (price: number) => {
         if (price % 1 === 0) {

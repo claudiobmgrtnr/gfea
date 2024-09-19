@@ -4,7 +4,7 @@ import { useQuery } from "@apollo/client";
 import styles from "./productList.module.css";
 import ProductTile from "../productTile/ProductTile";
 
-export type product = {
+export interface product {
     id: number;
     name: string;
     imageUrl: string;

@@ -7,6 +7,7 @@ export interface ratingProps {
 }
 
 const Rating: FC<ratingProps> = ({ rating, ratingCount }) => {
+    // possible challenge: Write a function that calculates and returns data for the stars
     const calcStars = (rating: number) => {
         let roundedRating = Math.round(rating * 2) / 2;
         const ratingStars = [];
