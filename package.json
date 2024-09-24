@@ -7,7 +7,7 @@
         "concurrently": "^8.2.2"
     },
     "stackblitz": {
-        "startCommand": "yarn start"
+        "startCommand": "yarn go"
     },
     "license": "UNLICENSED"
 }
