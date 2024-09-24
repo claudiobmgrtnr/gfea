@@ -6,7 +6,7 @@
         "concurrently": "^8.2.2"
     },
     "stackblitz": {
-        "startCommand": "npm start"
+        "startCommand": "yarn start"
     },
     "license": "UNLICENSED"
 }
