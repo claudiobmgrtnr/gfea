@@ -1,13 +1,13 @@
 {
     "scripts": {
-        "go": "yarn && yarn start",
-        "start": "concurrently \"cd backend && yarn && yarn start\" \"cd frontend && yarn && yarn dev\""
+        "start": "yarn && yarn start",
+        "up": "concurrently \"cd backend && yarn && yarn start\" \"cd frontend && yarn && yarn dev\""
     },
     "dependencies": {
         "concurrently": "^8.2.2"
     },
     "stackblitz": {
-        "startCommand": "yarn go",
+        "startCommand": "yarn up",
         "installDependencies": false
     },
     "license": "UNLICENSED"
