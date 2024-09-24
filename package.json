@@ -7,7 +7,7 @@
         "concurrently": "^8.2.2"
     },
     "stackblitz": {
-        "startCommand": "yarn up",
+        "startCommand": "yarn start",
         "installDependencies": false
     },
     "license": "UNLICENSED"
