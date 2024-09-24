@@ -1,5 +1,6 @@
 {
     "scripts": {
+        "go": "yarn && yarn start",
         "start": "concurrently \"cd backend && yarn && yarn start\" \"cd frontend && yarn && yarn dev\""
     },
     "dependencies": {
