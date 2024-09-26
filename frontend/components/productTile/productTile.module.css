@@ -1,14 +1,7 @@
 .productTileWrapper {
     position: relative;
 }
-.productTileWrapper::before {
-    left: -1px;
-    position: absolute;
-    width: 1px;
-    background: #ebebeb;
-    top: 24px;
-    bottom: 12px;
-}
+
 
 .productTile {
     padding: 48px 24px 24px;
