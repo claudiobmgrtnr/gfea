@@ -4,14 +4,6 @@
     format("woff2");
 }
 
-.rating {
-  display: flex;
-  align-items: center;
-  margin-top: 12px;
-  min-height: 16px;
-  font-size: 13px;
-}
-
 .full::before {
   content: "\e800"
 }
@@ -22,21 +14,12 @@
 
 .half::after {
   content: "\e802";
-  color: #bdbdbd
 }
 
 .empty::before {
   content: "\e800";
-  color: #bdbdbd;
 }
 
 .star {
   font-family: "ratingStar";
-  color: #000;
-}
-
-.ratingCount {
-  display: inline-block;
-  margin-left: 5px;
-  color: rgba(0, 0, 0, 0.6);
 }

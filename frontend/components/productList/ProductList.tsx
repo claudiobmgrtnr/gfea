@@ -10,13 +10,11 @@ export interface product {
     imageUrl: string;
     price: number;
     insteadOfPrice?: number;
-    rating: number;
-    ratingCount: number;
     description: string;
     Brand: { name: string };
     category: string;
     brandName: string;
-};
+}
 
 export default function ProductList() {
     const { loading, error, data } = useQuery(GET_PRODUCTS);
@@ -36,8 +34,6 @@ export default function ProductList() {
                             imageUrl={product.imageUrl}
                             price={product.price}
                             insteadOfPrice={product.insteadOfPrice}
-                            rating={product.rating}
-                            ratingCount={product.ratingCount}
                             description={product.description}
                             category={product.category}
                             brandName={product.Brand.name}

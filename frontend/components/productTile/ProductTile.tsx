@@ -9,8 +9,6 @@ const ProductTile: React.FC<Omit<product, "id" | "Brand">> = ({
     imageUrl,
     price,
     insteadOfPrice,
-    rating,
-    ratingCount,
     description,
     category,
     brandName,
@@ -48,8 +46,6 @@ const ProductTile: React.FC<Omit<product, "id" | "Brand">> = ({
                     <span className={styles.productName}> {name}</span>
                 </p>
                 <p className={styles.description}>{description}</p>
-
-                <Rating rating={rating} ratingCount={ratingCount} />
             </article>
         </div>
     );
