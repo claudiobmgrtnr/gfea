@@ -1,9 +1,14 @@
 {
     "scripts": {
-        "start": "concurrently \"cd backend && yarn && yarn start\" \"cd frontend && yarn && yarn dev\""
+        "start": "yarn && yarn up",
+        "up": "concurrently \"cd backend && yarn && yarn start\" \"cd frontend && yarn && yarn dev\""
     },
     "dependencies": {
         "concurrently": "^8.2.2"
+    },
+    "stackblitz": {
+        "startCommand": "git fetch && yarn start",
+        "installDependencies": false
     },
     "license": "UNLICENSED"
 }
