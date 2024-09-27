@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "start": "yarn && yarn up",
+        "start": "git fetch && yarn && yarn up",
         "up": "concurrently \"cd backend && yarn && yarn start\" \"cd frontend && yarn && yarn dev\""
     },
     "dependencies": {
