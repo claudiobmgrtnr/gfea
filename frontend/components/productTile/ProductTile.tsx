@@ -3,7 +3,6 @@ import styles from "./productTile.module.css";
 import Rating from "../rating/Rating";
 import { product } from "../productList/ProductList";
 
-// possible challenge: explain Omit
 const ProductTile: React.FC<Omit<product, "id" | "Brand">> = ({
     name,
     imageUrl,
