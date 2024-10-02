@@ -7,7 +7,7 @@
         "concurrently": "^8.2.2"
     },
     "stackblitz": {
-        "startCommand": "yarn start",
+        "startCommand": "git fetch && yarn start",
         "installDependencies": false
     },
     "license": "UNLICENSED"
