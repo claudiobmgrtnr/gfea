@@ -1,5 +1,6 @@
 import { FC } from "react";
 import styles from "./rating.module.css";
+import RatingStarCss from "../ratingStar/RatingStarCss";
 
 export interface ratingProps {
     rating: number;
@@ -10,31 +11,29 @@ const Rating: FC<ratingProps> = ({ rating, ratingCount }) => {
     // possible challenge: Write a function that calculates and returns data for the stars
     const calcStars = (rating: number) => {
         let roundedRating = Math.round(rating * 2) / 2;
-        const ratingStars = [];
+        const ratingStarFills: Array<"full" | "empty" | "half"> = [];
         let rest = 5;
 
         while (rest > 0) {
             if (roundedRating >= 1) {
-                ratingStars.push("full");
+                ratingStarFills.push("full");
             }
             if (roundedRating === 0.5) {
-                ratingStars.push("half");
+                ratingStarFills.push("half");
             }
             if (roundedRating < 0.5) {
-                ratingStars.push("empty");
+                ratingStarFills.push("empty");
             }
             roundedRating--;
             rest--;
         }
-        return ratingStars;
+        return ratingStarFills;
     };
 
     return (
         <div className={styles.rating}>
-            {calcStars(rating).map((star, index) => (
-                <div
-                    key={index}
-                    className={`${styles[star]} ${styles.star}`}></div>
+            {calcStars(rating).map((fill, index) => (
+                <RatingStarCss fill={fill} key={index} />
             ))}
             <span className={styles.ratingCount}>{ratingCount}</span>
         </div>
