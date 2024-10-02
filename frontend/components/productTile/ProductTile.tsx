@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./productTile.module.css";
 import Rating from "../rating/Rating";
 import { product } from "../productList/ProductList";
+import RatingStar from "../ratingStar/ratingStar";
 
 const ProductTile: React.FC<Omit<product, "id" | "Brand">> = ({
     name,
@@ -44,6 +45,8 @@ const ProductTile: React.FC<Omit<product, "id" | "Brand">> = ({
                     <span className={styles.productName}> {name}</span>
                 </p>
                 <p className={styles.description}>{description}</p>
+                <RatingStar fill="half"/>
+                <RatingStar flavour="svg" fill="half"/>
             </article>
         </div>
     );
